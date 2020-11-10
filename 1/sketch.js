@@ -1,7 +1,5 @@
 'use strict';
 let state = 'title';
-let state = 'level 1';
-let state = 'you win';
 let cnv;
 let points = 0;
 let w = 600;
