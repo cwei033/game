@@ -45,7 +45,7 @@ function titleMouseClicked() {
 }
 
 function level1() {
-  background(255);
+  background(0);
   text('click for points', w/2, h/5);
 }
 
