@@ -40,20 +40,22 @@ function draw() {
     default:
       break;
   }
-}
 
-function keyPressed() {
-  if (keyCode == LEFT_ARROW) {
+  if (keyIsDown(LEFT_ARROW)) {
     player.direction = 'left';
-  } else if (keyCode == RIGHT_ARROW) {
+  } else if (keyIsDown(RIGHT_ARROW)) {
     player.direction = 'right';
-  } else if (keyCode == UP_ARROW) {
+  } else if (keyIsDown(UP_ARROW)) {
     player.direction = 'up';
-  } else if (keyCode == DOWN_ARROW) {
+  } else if (keyIsDown(DOWN_ARROW)) {
     player.direction = 'down';
   } else if (key = ' ') {
     player.direction = 'still';
   }
+}
+
+function keyPressed() {
+
 }
 
 function title() {
