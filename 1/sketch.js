@@ -40,35 +40,23 @@ function draw() {
     default:
       break;
   }
-
-  // if (keyIsDown(LEFT_ARROW)) {
-  //   player.direction = 'left';
-  // } else if (keyIsDown(RIGHT_ARROW)) {
-  //   player.direction = 'right';
-  // } else if (keyIsDown(UP_ARROW)) {
-  //   player.direction = 'up';
-  // } else if (keyIsDown(DOWN_ARROW)) {
-  //   player.direction = 'down';
-  // } else if (key = ' ') {
-  //   player.direction = 'still';
-  // }
 }
 
-function keyPressed() {
-  if (keyCode == LEFT_ARROW) {
-    player.direction = 'left';
-  } else if (keyCode == RIGHT_ARROW) {
-    player.direction = 'right';
-  } else if (keyCode == UP_ARROW) {
-    player.direction = 'up';
-  } else if (keyCode == DOWN_ARROW) {
-    player.direction = 'down';
-  }
-}
-
-function keyReleased() {
-  player.direction = 'still';
-}
+// function keyPressed() {
+//   if (keyCode == LEFT_ARROW) {
+//     player.direction = 'left';
+//   } else if (keyCode == RIGHT_ARROW) {
+//     player.direction = 'right';
+//   } else if (keyCode == UP_ARROW) {
+//     player.direction = 'up';
+//   } else if (keyCode == DOWN_ARROW) {
+//     player.direction = 'down';
+//   }
+// }
+//
+// function keyReleased() {
+//   player.direction = 'still';
+// }
 
 function title() {
   background(220);
@@ -86,6 +74,18 @@ function titleMouseClicked() {
 
 function level1() {
   background(0);
+
+  if (keyIsDown(LEFT_ARROW)) {
+    player.direction = 'left';
+  } else if (keyIsDown(RIGHT_ARROW)) {
+    player.direction = 'right';
+  } else if (keyIsDown(UP_ARROW)) {
+    player.direction = 'up';
+  } else if (keyIsDown(DOWN_ARROW)) {
+    player.direction = 'down';
+  } else {
+    player.direction = 'still';
+  }
 
   if (random(1) <= 0.01) {
     coins.push(new Coins());
