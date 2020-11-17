@@ -16,22 +16,22 @@ class Player {
         image(playerImg, this.x, this.y, this.w, this.h);
         break;
       case 'up':
-        if (this.y > 0) {
+        if (this.y >= 0) {
           image(playerImg, this.x, this.y, this.w, this.h);
         }
         break;
       case 'down':
-        if (this.y < h - this.h) {
+        if (this.y <= h - this.h) {
           image(playerImg, this.x, this.y, this.w, this.h);
         }
         break;
       case 'left':
-        if (this.x > 0) {
+        if (this.x >= 0) {
           image(playerFlipImg, this.x, this.y, this.w, this.h);
         }
         break;
       case 'right':
-        if (this.x < w - this.w) {
+        if (this.x <= w - this.w) {
           image(playerImg, this.x, this.y, this.w, this.h);
         }
         break;
