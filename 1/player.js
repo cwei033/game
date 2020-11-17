@@ -8,8 +8,8 @@ class Player {
   }
 
   display() {
-    // rect(this.x, this.y, this.r, this.r);
-    image(playerImg, this.x, this.y, this.r, this.r);
+    rect(this.x, this.y, 120, 60);
+    // image(playerImg, this.x, this.y, this.r, this.r);
   }
 
   move() {
