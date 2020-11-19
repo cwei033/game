@@ -1,8 +1,9 @@
-// URL to API (query string always beings with question mark)
+// URL to API (query string always begins with question mark)
 var api = "http://api.giphy.com/v1/gifs/search?"
-// API code
+//query string
+  // API code
 var apiKey = "&api_key=fxitlX3IlNs8eJ8twliHVbLvTrxVZmic";
-//search
+  //search
 var query = "&q=meme";
 
 
