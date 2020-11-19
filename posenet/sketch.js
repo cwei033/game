@@ -3,9 +3,11 @@ let poseNet;
 let pose;
 let bird;
 let skeleton;
+let eye;
 
 function preload() {
   bird = loadImage('bird.png')
+  eye = loadImage('eye.jpg')
 }
 
 function setup() {
@@ -17,7 +19,7 @@ function setup() {
 }
 
 function gotPoses(poses) {
-  // console.log(poses);
+  console.log(poses);
   if (poses.length > 0) {
     pose = poses[0].pose;
     skeleton = poses[0].skeleton;
@@ -40,6 +42,7 @@ function draw() {
     fill(255, 0, 0);
     ellipse(pose.nose.x, pose.nose.y, d);
     image(bird, pose.leftShoulder.x, pose.leftShoulder.y, 80, 80);
+    image(eye, pose.leftEye.x, pose.leftEye.y, 50, 50);
 
     // for (let i = 0; i < pose.keypoints.length; i++) {
     //   let x = pose.keypoints[i].position.x;
