@@ -1,5 +1,5 @@
 // URL to API (query string always begins with question mark)
-var api = "http://api.giphy.com/v1/gifs/search?"
+var api = "https://api.giphy.com/v1/gifs/search?"
 //query string
   // API code
 var apiKey = "&api_key=fxitlX3IlNs8eJ8twliHVbLvTrxVZmic";
